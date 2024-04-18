@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="stop.css">
+</head>
+<body>
+    <h1 ></h1>
+  <div class="background-image">
+    <div class="background-overlay"></div>
+    <!-- <img src="stpowatch.jpg" alt="Background Image"> -->
+    <div class="stopwatch">
+      <div id="display" class="display">00:00:00</div>
+      <button id="startStopButton" onclick="startStop()">Start</button>
+      <button id="resetButton" onclick="reset()">Reset</button>
+      <button id="lapButton" onclick="lap()">Lap</button>
+      <ul id="lapTimes" class="lap-times"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

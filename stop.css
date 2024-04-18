@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+.background-image {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('stpowatch.jpg'); /* Replace 'background-image.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+}
+ 
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity to control brightness */
+  }
+  
+  .background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .stopwatch {
+    z-index: 1; /* Ensure stopwatch appears above the background overlay */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .display {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  
+  .lap-times {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lap-times li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
